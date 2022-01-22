@@ -13,44 +13,44 @@
 
 <body>
     <div class="container">
-        <h1>Quizz PHP</h1>
+        <h1>Quizz Javascript !</h1>
         <form class="form-quizz">
             <div class="question">
                 <h5>Avec quoi peut-on créer une instance d'un nouvel objet ?</h5>
                 <div>
                     <input type="radio" id="add" name="q1" value="a" checked>
-                    <label for="Clovis">add</label>
+                    <label for="add">add</label>
                 </div>
                 <div>
                     <input type="radio" id="instance" name="q1" value="b">
-                    <label for="Lincoln">instance</label>
+                    <label for="instance">instance</label>
                 </div>
                 <div>
                     <input type="radio" id="new" name="q1" value="c">
-                    <label for="Lincoln">new</label>
+                    <label for="new">new</label>
                 </div>
                 <div>
                     <input type="radio" id="this" name="q1" value="d">
-                    <label for="Lincoln">this</label>
+                    <label for="this">this</label>
                 </div>
             </div>
             <div class="question">
                 <h5>Quelle propriété permet d'identifier l'OS de l'utilisateur ?</h5>
                 <div>
                     <input type="radio" id="system" name="q2" value="a" checked>
-                    <label for="Clovis">navigator.system</label>
+                    <label for="system">navigator.system</label>
                 </div>
                 <div>
                     <input type="radio" id="platform" name="q2" value="b">
-                    <label for="Lincoln">navigator.platform</label>
+                    <label for="platform">navigator.platform</label>
                 </div>
                 <div>
                     <input type="radio" id="os" name="q2" value="c">
-                    <label for="Lincoln">navigator.os</label>
+                    <label for="os">navigator.os</label>
                 </div>
                 <div>
                     <input type="radio" id="userAgent" name="q2" value="d">
-                    <label for="Lincoln">navigator.userAgent</label>
+                    <label for="userAgent">navigator.userAgent</label>
                 </div>
                
             </div>
@@ -58,19 +58,19 @@
                 <h5>L'opérateur == </h5>
                 <div>
                     <input type="radio" id="OU" name="q3" value="a" checked>
-                    <label for="Clovis">est un OU logique</label>
+                    <label for="OU">est un OU logique</label>
                 </div>
                 <div>
                     <input type="radio" id="teste" name="q3" value="b">
-                    <label for="Lincoln">teste l'égalité</label>
+                    <label for="teste">teste l'égalité</label>
                 </div>
                 <div>
                     <input type="radio" id="affectations" name="q3" value="c">
-                    <label for="Lincoln">s'utilise pour les affectations</label>
+                    <label for="affectations">s'utilise pour les affectations</label>
                 </div>
                 <div>
                     <input type="radio" id="javaScriptt" name="q3" value="d">
-                    <label for="Lincoln"> n'existe pas en JavaScriptt</label>
+                    <label for="javaScriptt"> n'existe pas en JavaScriptt</label>
                 </div>
                
             </div>
@@ -78,43 +78,48 @@
                 <h5>Que renvoie ch1.slice(-3, -1) si ch1="ABCDE" ?</h5>
                 <div>
                     <input type="radio" id="ABCDE" name="q4" value="a" checked>
-                    <label for="Clovis">ABCDE</label>
+                    <label for="ABCDE">ABCDE</label>
                 </div>
                 <div>
                     <input type="radio" id="AB" name="q4" value="b">
-                    <label for="Lincoln">AB</label>
+                    <label for="AB">AB</label>
                 </div>
                 <div>
                     <input type="radio" id="CD" name="q4" value="c">
-                    <label for="Lincoln">CD</label>
+                    <label for="CD">CD</label>
                 </div>
                 <div>
                     <input type="radio" id="BC" name="q4" value="d">
-                    <label for="Lincoln">BC</label>
+                    <label for="BC">BC</label>
                 </div>
             </div>
             <div class="question">
                 <h5>Comment parcourir toutes les valeurs du tableau T1 ?</h5>
                 <div>
                     <input type="radio" id="each" name="q5" value="a" checked>
-                    <label for="Clovis">for(each(T1[]) { }</label>
+                    <label for="each">for(each(T1[]) { }</label>
                 </div>
                 <div>
                     <input type="radio" id="in" name="q5" value="b">
-                    <label for="Lincoln">for(i in T1) { }</label>
+                    <label for="in">for(i in T1) { }</label>
                 </div>
                 <div>
                     <input type="radio" id="T1" name="q5" value="c">
-                    <label for="Lincoln">for(T1[i]) { }</label>
+                    <label for="T1">for(T1[i]) { }</label>
                 </div>
                 <div>
                     <input type="radio" id="NULL" name="q5" value="d">
-                    <label for="Lincoln"> for(T1[]<>NULL) { }</label>
+                    <label for="NULL"> for(T1[]<>NULL) { }</label>
                 </div>
                
             </div>
             <button type = "submit">Valider</button>
         </form>
+        <div class="resultats">
+            <h3>Cliquez sur "Valider" pour afficher les résultats</h3>
+            <p class="aide"></p>
+            <p class="note"></p>
+        </div>
     </div>
 
 
