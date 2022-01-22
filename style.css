@@ -8,5 +8,24 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 h1 {
+    font-family: Russo One,Arial;
     text-align: center;
+    font-weight: lighter;
+    letter-spacing: 0.2rem;
+    padding: 2rem 0;
+    font-size: 2.5rem;
+}
+.container{
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    height: auto;
+    background: rgb(230, 230, 241);
+}
+.question{
+    padding: 1rem 2rem 2rem;
+    margin: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem rgb(182, 179, 179) ;
+
 }
