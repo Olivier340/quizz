@@ -5,116 +5,119 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quizz JS</title>
-   
+
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css"> <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="container">
         <h1>Quizz Javascript !</h1>
         <form class="form-quizz">
-            <div class="question">
-                <h5>Avec quoi peut-on créer une instance d'un nouvel objet ?</h5>
-                <div>
-                    <input type="radio" id="add" name="q1" value="a" checked>
-                    <label for="add">add</label>
+            <div class="questions-container">
+                <div class="question">
+                    <h5>Avec quoi peut-on créer une instance d'un nouvel objet ?</h5>
+                    <div>
+                        <input type="radio" id="add" name="q1" value="a" checked>
+                        <label for="add">add</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="instance" name="q1" value="b">
+                        <label for="instance">instance</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="new" name="q1" value="c">
+                        <label for="new">new</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="this" name="q1" value="d">
+                        <label for="this">this</label>
+                    </div>
                 </div>
-                <div>
-                    <input type="radio" id="instance" name="q1" value="b">
-                    <label for="instance">instance</label>
+                <div class="question">
+                    <h5>Quelle propriété permet d'identifier l'OS de l'utilisateur ?</h5>
+                    <div>
+                        <input type="radio" id="system" name="q2" value="a" checked>
+                        <label for="system">navigator.system</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="platform" name="q2" value="b">
+                        <label for="platform">navigator.platform</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="os" name="q2" value="c">
+                        <label for="os">navigator.os</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="userAgent" name="q2" value="d">
+                        <label for="userAgent">navigator.userAgent</label>
+                    </div>
+
                 </div>
-                <div>
-                    <input type="radio" id="new" name="q1" value="c">
-                    <label for="new">new</label>
+                <div class="question">
+                    <h5>L'opérateur == </h5>
+                    <div>
+                        <input type="radio" id="OU" name="q3" value="a" checked>
+                        <label for="OU">est un OU logique</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="teste" name="q3" value="b">
+                        <label for="teste">teste l'égalité</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="affectations" name="q3" value="c">
+                        <label for="affectations">s'utilise pour les affectations</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="javaScriptt" name="q3" value="d">
+                        <label for="javaScriptt"> n'existe pas en JavaScriptt</label>
+                    </div>
+
                 </div>
-                <div>
-                    <input type="radio" id="this" name="q1" value="d">
-                    <label for="this">this</label>
+                <div class="question">
+                    <h5>Que renvoie ch1.slice(-3, -1) si ch1="ABCDE" ?</h5>
+                    <div>
+                        <input type="radio" id="ABCDE" name="q4" value="a" checked>
+                        <label for="ABCDE">ABCDE</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="AB" name="q4" value="b">
+                        <label for="AB">AB</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="CD" name="q4" value="c">
+                        <label for="CD">CD</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="BC" name="q4" value="d">
+                        <label for="BC">BC</label>
+                    </div>
+                </div>
+                <div class="question">
+                    <h5>Comment parcourir toutes les valeurs du tableau T1 ?</h5>
+                    <div>
+                        <input type="radio" id="each" name="q5" value="a" checked>
+                        <label for="each">for(each(T1[]) { }</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="in" name="q5" value="b">
+                        <label for="in">for(i in T1) { }</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="T1" name="q5" value="c">
+                        <label for="T1">for(T1[i]) { }</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="NULL" name="q5" value="d">
+                        <label for="NULL"> for(T1[]<>NULL) { }</label>
+                    </div>
+
                 </div>
             </div>
-            <div class="question">
-                <h5>Quelle propriété permet d'identifier l'OS de l'utilisateur ?</h5>
-                <div>
-                    <input type="radio" id="system" name="q2" value="a" checked>
-                    <label for="system">navigator.system</label>
-                </div>
-                <div>
-                    <input type="radio" id="platform" name="q2" value="b">
-                    <label for="platform">navigator.platform</label>
-                </div>
-                <div>
-                    <input type="radio" id="os" name="q2" value="c">
-                    <label for="os">navigator.os</label>
-                </div>
-                <div>
-                    <input type="radio" id="userAgent" name="q2" value="d">
-                    <label for="userAgent">navigator.userAgent</label>
-                </div>
-               
-            </div>
-            <div class="question">
-                <h5>L'opérateur == </h5>
-                <div>
-                    <input type="radio" id="OU" name="q3" value="a" checked>
-                    <label for="OU">est un OU logique</label>
-                </div>
-                <div>
-                    <input type="radio" id="teste" name="q3" value="b">
-                    <label for="teste">teste l'égalité</label>
-                </div>
-                <div>
-                    <input type="radio" id="affectations" name="q3" value="c">
-                    <label for="affectations">s'utilise pour les affectations</label>
-                </div>
-                <div>
-                    <input type="radio" id="javaScriptt" name="q3" value="d">
-                    <label for="javaScriptt"> n'existe pas en JavaScriptt</label>
-                </div>
-               
-            </div>
-            <div class="question">
-                <h5>Que renvoie ch1.slice(-3, -1) si ch1="ABCDE" ?</h5>
-                <div>
-                    <input type="radio" id="ABCDE" name="q4" value="a" checked>
-                    <label for="ABCDE">ABCDE</label>
-                </div>
-                <div>
-                    <input type="radio" id="AB" name="q4" value="b">
-                    <label for="AB">AB</label>
-                </div>
-                <div>
-                    <input type="radio" id="CD" name="q4" value="c">
-                    <label for="CD">CD</label>
-                </div>
-                <div>
-                    <input type="radio" id="BC" name="q4" value="d">
-                    <label for="BC">BC</label>
-                </div>
-            </div>
-            <div class="question">
-                <h5>Comment parcourir toutes les valeurs du tableau T1 ?</h5>
-                <div>
-                    <input type="radio" id="each" name="q5" value="a" checked>
-                    <label for="each">for(each(T1[]) { }</label>
-                </div>
-                <div>
-                    <input type="radio" id="in" name="q5" value="b">
-                    <label for="in">for(i in T1) { }</label>
-                </div>
-                <div>
-                    <input type="radio" id="T1" name="q5" value="c">
-                    <label for="T1">for(T1[i]) { }</label>
-                </div>
-                <div>
-                    <input type="radio" id="NULL" name="q5" value="d">
-                    <label for="NULL"> for(T1[]<>NULL) { }</label>
-                </div>
-               
-            </div>
-            <button class = "btn-success" type = "submit">Valider</button>
+            <button class="btn-success" type="submit">Valider</button>
         </form>
         <div class="results">
             <h3>Cliquez sur "Valider" pour afficher les résultats</h3>
@@ -126,7 +129,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-        </script>
+    </script>
     <script src="app.js"></script>
 
 </body>

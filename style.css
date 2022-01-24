@@ -27,6 +27,7 @@ h1 {
     margin: 2rem;
     border-radius: 1rem;
     box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.5) ;
+    background: rgb(246, 246, 253);
 
 }
 .question h5{
@@ -76,11 +77,12 @@ form button{
     font-size: 1.7rem;
     transition: background-color 0.2s ease-in-out;
 }
-.echec {
-    animation: echec 0.3s ease-in-out;
+.defeat {
+    animation: defeat 0.3s ease-in-out;
+    background-color: lightcoral;
 }
 
-@keyframes echec {
+@keyframes defeat {
     0% {
         transform: translateX(0px);
     }
@@ -92,5 +94,25 @@ form button{
     }
     100% {
         transform: translateX(0px);
+    }
+}
+
+.hit{
+    background-color: lightgreen;
+    animation: hit 0.3s ease-in-out;
+}
+
+@keyframes hit {
+    0% {
+        transform: translateY(0px);
+    }
+    33% {
+        transform: translateY(5px);
+    }
+    66% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0px);
     }
 }
