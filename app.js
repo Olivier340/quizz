@@ -1,5 +1,5 @@
 // tableau des bonnes réponses
-const arrayResponses = ['d', 'b', 'a', 'c', 'b'];
+const arrayResponses = ['d', 'b', 'b', 'c', 'b'];
 
 // emojis recupérer sur https://emojipedia.org/
 const emojis = ['✔️', '✨', '👀', '😭', '👎'];
@@ -17,7 +17,6 @@ let arrayResults = [];
 
 // Initialisation du tableau des réponses de l'utilisateur
 let arrayUserResponses = [];
-
 
 form.addEventListener('submit', (event) => {
     event.preventDefault();
@@ -92,7 +91,7 @@ function displayResults(arrayResults) {
             scoreResult.innerText = '1/5'
             break;
         case 5:
-            titleResult.innerText = `👎 Peux mieux faire ! 👎`
+            titleResult.innerText = `👎 Vous êtes vraiment fatigué ! 👎`
             helpResult.innerText = 'Retentez une autre réponse dans les cases rouges, puis re-validez !'
             scoreResult.innerText = '0/5'
             break;
@@ -122,10 +121,16 @@ function displayColors(arrayResults) {
     }
 }
 
-// au click sur une question on remet la couleur à l'etat initial 
+// au click sur une question on reinitialise la couleur de fond et l'affichage des résultats
 questions.forEach(item => {
     item.addEventListener('click', () => {
         item.classList.remove('hit');
         item.classList.remove('defeat');
+      
     })
+})
+blockQuestions.addEventListener('click', () => {
+    titleResult.innerText = `Cliquez sur "Valider" pour afficher les résultats`
+    helpResult.innerText = ''
+    scoreResult.innerText = ''
 })
